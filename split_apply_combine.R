@@ -1,5 +1,6 @@
 # Split-apply-combine example on line
 # http://applied-r.com/split-apply-combine-techniques/
+# https://medium.com/analytics-vidhya/split-apply-combine-strategy-for-data-mining-4fd6e2a0cc99
 
 # Data format/shape
 library(tibble)                              # simple data.frames
