@@ -44,10 +44,10 @@ iris %>%
   map(~ lm(Sepal.Length ~ Petal.Length, data = .)) %>%
   map(summary) %>%
   map_dbl("r.squared")
-#
+## map_if(): to convert factors to characters
 iris %>% 
         map_if(is.factor, as.character) %>% 
         str()
 str(iris)
-
+# map2(): apply a function across 2 lists
 map2_dfc(1:3, 2:4, ~ .x * (.y - 1))
